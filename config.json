@@ -1,0 +1,39 @@
+{
+  "DestinationRoot": "C:\\Path\\To\\LogHarvester\\CollectedLogs\\",
+  "HarvestMode": "HarvestOnce",
+  "FileNameFormat": "Original",
+  "AutoOpenFolder": true,
+  "GroupLogsByMachine": true,
+  "IncludeConfigSnapshot": true,
+  "DryRun": false,
+  "IgnoreMachines": [],
+
+  "Machines": [
+    {
+      "MachineID": "LocalMachine",
+      "MachineName": "localhost",
+      "IsLocal": true,
+      "Logs": [
+        {
+          "ComponentName": "ExampleComponentA",
+          "SourcePath": "C:\\Path\\To\\ComponentA\\ComponentA.log"
+        },
+        {
+          "ComponentName": "ExampleComponentB",
+          "SourcePath": "C:\\Path\\To\\ComponentB\\ComponentB.log"
+        }
+      ]
+    },
+    {
+      "MachineID": "RemoteMachine1",
+      "MachineName": "192.0.2.0",
+      "IsLocal": false,
+      "Logs": [
+        {
+          "ComponentName": "RemoteComponentX",
+          "SourcePath": "\\\\192.0.2.0\\SharedLogs\\RemoteComponentX\\RemoteComponentX.log"
+        }
+      ]
+    }
+  ]
+}
