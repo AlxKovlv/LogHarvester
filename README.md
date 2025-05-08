@@ -58,12 +58,12 @@ The behavior is defined in `config.json`. Here's an example:
     },
     {
       "MachineID": "Remote1",
-      "MachineName": "192.168.1.10",
+      "MachineName": "192.0.2.0",
       "IsLocal": false,
       "Logs": [
         {
           "ComponentName": "RemoteService",
-          "SourcePath": "\\\\192.168.1.10\\SharedLogs\\RemoteService\\log.txt"
+          "SourcePath": "\\\\192.0.2.0\\SharedLogs\\RemoteService\\log.txt"
         }
       ]
     }
