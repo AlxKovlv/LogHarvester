@@ -57,13 +57,13 @@ The behavior is defined in `config.json`. Here's an example:
       ]
     },
     {
-      "MachineID": "Remote1",
+      "MachineID": "RemoteMachine1",
       "MachineName": "192.0.2.0",
       "IsLocal": false,
       "Logs": [
         {
-          "ComponentName": "RemoteService",
-          "SourcePath": "\\\\192.0.2.0\\SharedLogs\\RemoteService\\log.txt"
+          "ComponentName": "RemoteServiceX",
+          "SourcePath": "\\\\192.0.2.0\\SharedLogs\\RemoteServiceX\\log.txt"
         }
       ]
     }
